@@ -1,9 +1,18 @@
 body{
+	/* font-family: "Montserrat", sans-serif; */
+	background: #e9e9e9;
+	width: 100%;
+	min-height: 100vh;
+	/* display: flex; */
+	justify-content: center;
+	align-items: center;
+	overflow-x: hidden;
     margin: 0;
+	font-family: 'Roboto', sans-serif;
 }
 #top{
     min-height: 100vh;
-    background-image: url(../img/bg-1.jpg);
+    background-image: url(../img/bg-3.jpg);
     background-position: top;
     background-size: cover;
     width: 100%;
@@ -19,16 +28,6 @@ body{
 	box-sizing: border-box;
 }
 
-body {
-	font-family: "Montserrat", sans-serif;
-	background: #e9e9e9;
-	width: 100%;
-	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
-}
 
 h1 {
 	font-size: 40px;
@@ -76,6 +75,7 @@ nav{
 	justify-content: center;
 	align-items: center;
 	right: -200vw;
+	z-index: 2;
 }
 
 nav ul {
@@ -170,11 +170,11 @@ nav .close:hover div::after{
 }
 
 .super-big{
-    font-size: 72px;
+    font-size: 6vw;
 }
 
-.aqua{
-    color: rgb(255, 51, 0);
+.lime{
+    color: rgb(133 255 0);
 }
 
 .borderless-button {
@@ -186,17 +186,27 @@ nav .close:hover div::after{
     display: inline-block;
     font-size: 13pt;
     padding: 10px 20px;
+	width: 12vw;
+    font-size: 1.5vw;
     transition: all 0.5s;
 }
 
 section:nth-of-type(1) .btn {
     margin-bottom: 53px;
     /* padding: 12px 40px 12px 15px; */
-    padding: 10px 50px;
+    /* padding: 10px 50px; */
     position: relative;
 }
 
 .btn:hover {
-    background-color: rgb(192, 48, 12);
-    border-color: rgb(192, 48, 12);
+    background-color: rgb(27 125 167);
+    border-color: rgb(27 125 167);
+}
+
+#footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow-x: hidden;
+	height: 10vh;
 }
