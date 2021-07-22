@@ -10,14 +10,15 @@ export default class NavComponent extends React.Component{
     
     render() {
         return (
-            <Navbar
+            <Navbar  collapseOnSelect expand="lg"
               className={`nav-container w-100 container-fluid nav-transparent}`}
             >
               <Navbar.Brand className="brand" href={"/#home"}>
                 <span className={`nav-brand white-link`}>[ A ]</span>
               </Navbar.Brand>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
+              <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler navbar-dark"  />
               <Navbar.Collapse id="basic-navbar-nav"> 
+
               <Nav className="container-fluid pt-3" style={{justifyContent: "flex-end"}}>
                   <Nav.Link
                     className={`px-3 nav-link lead white-link`}

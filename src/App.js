@@ -9,6 +9,7 @@ import Jumbotron from "react-bootstrap/Jumbotron"
 import Container from 'react-bootstrap/Container'
 import Button from "react-bootstrap/Button"
 
+
 import * as Config from "./shared-util/config"
 
 function App() {
@@ -53,7 +54,7 @@ function App() {
           >
           <Container className="row">
 
-            <div className="col-md-6 pt-5">
+            <div className="col-md-6 py-5">
               <div className="mugshot-wrapper">
                 <img src={`${process.env.PUBLIC_URL}/assets/mugshot.jpg`} alt="ankit" className="mugshot-img"/>
 
@@ -82,6 +83,7 @@ function App() {
               </div>
           </Container>
         </Jumbotron>  
+        <br/>
 
         {/* experience timeline */}
         <div
@@ -94,6 +96,8 @@ function App() {
           <br/>
           <TheTimeline/>
         </div>
+        <br/>
+        <br/>
 
         {/* project section */}
         <Jumbotron fluid
@@ -114,7 +118,7 @@ function App() {
                 {
                   Config.projects.map(el => {
                     return(
-                      <div className="col-md-5 col-12 my-3">
+                      <div key={el.name} className="col-md-5 col-12 my-3">
                         <ProjectCard
                           name={el.name}
                           desc={el.desc}
@@ -133,7 +137,7 @@ function App() {
 
         {/* contact jumbo */}
         <Jumbotron fluid
-            className="jumbotron-other w-100"
+            className="jumbotron-small w-100"
             id="contact"
           >
           <Container className="row justify-content-center">
@@ -142,7 +146,10 @@ function App() {
               <div className="section-header-container">
                 <h1 className="section-header text-center"><span className="color-me">Get</span> In Touch</h1>
               </div>
-              <p className="pt-3 section-desc">{Config.contactText}</p>
+              <p className="pt-3 section-desc">
+              `I am always open to collabarate on interesting projects. So, whether you have a question or just want to say hi, drop me a message 
+                @<a href={`mailto:${Config.emailId}`} className="color-me email-link">{Config.emailId}</a>  and I'll get back to you!`
+              </p>
               <br />
             </div>
 
@@ -158,6 +165,7 @@ function App() {
               </a>
               
             </div>
+
           </Container>
         </Jumbotron>
 

@@ -240,7 +240,12 @@ const projects = [
 	}
 ]
 
-const contactText = `I am always open to collabarate on interesting projects. So, whether you have a question or just want to say hi, drop me a message and I'll get back to you!`
+const contactText = `I am always open to collabarate on interesting projects. So, whether you have a question or just want to say hi, drop me a message @${emailId} and I'll get back to you!`
+
+const linkedinUrl = "https://linkedin.com/in/ankit-gupta-21j"
+const githubUrl = "https://github.com/aki21j"
+const stackoverflowUrl = "https://stackoverflow.com/users/10293708/ankit-gupta"
+const instagramUrl = "https://www.instagram.com/I_ankit.gupta/"
 
 module.exports = {
 	jumbotronOptions,
@@ -253,5 +258,9 @@ module.exports = {
 	aboutMeLine3,
 	technologies,
 	projects,
-	contactText
+	contactText,
+	linkedinUrl,
+	githubUrl,
+	stackoverflowUrl,
+	instagramUrl
 }

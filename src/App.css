@@ -44,6 +44,7 @@
   
 }
 
+.jumbotron-small,
 .jumbotron-main,
 .jumbotron-other{
   min-height: 100vh;
@@ -56,6 +57,11 @@
   text-align: left;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.jumbotron-other,
+.jumbotron-small{
+  min-height: 80vh;
 }
 
 .color-me{
@@ -288,3 +294,13 @@
   background-color: #00e279!important;
 }
 
+.email-link:hover{
+  color: #0bff8e!important;
+}
+
+
+@media only screen and (max-width: 600px)  {
+  .section-header{
+    text-align: center!important;
+  }
+}

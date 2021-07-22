@@ -23,12 +23,12 @@ const ProjectCard = (props) => {
                 </div>
             </div>
 
-            <h3 class="project-title">
+            <h3 className="project-title">
                 <a href={props.webUrl ? props.webUrl : props.githubUrl} target="_blank" rel="noopener noreferrer">
                     {props.name}
                 </a>
             </h3>
-            <div class="project-description">
+            <div className="project-description">
                 <p>{props.desc}</p>
             </div>
         </div>
