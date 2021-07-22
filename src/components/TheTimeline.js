@@ -14,7 +14,7 @@ import {
      dotColor: '#262626',
      borderDotColor: '#d0cdc4',
      titleColor: '#fff',
-     subtitleColor: '#bf9765',
+     subtitleColor: 'rgb(255 236 5 / 89%)',
      textColor: 'rgb(143 143 143)',
     };
    
@@ -51,4 +51,4 @@ import {
     );
    };
 
-export {TheTimeline}
+export default TheTimeline

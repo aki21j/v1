@@ -198,6 +198,9 @@ const jumbotronOptions = {
 
 const firstName = "Ankit"
 const lastName = "Gupta"
+const emailId = "ankitgupta21j@gmail.com"
+
+const cvLink = "https://drive.google.com/file/d/1CgREkc443XzA5iofvdxi9uoZe2Vox5Hn/view?usp=sharing"
 
 const aboutMeLine1 = `Hello! My name is ${firstName} and I enjoy building things that usually reside on the internet.`
 const aboutMeLine2 = `I have been building stuff since 2017 and since then, I've had the privilege of working at multiple companies including startups.`
@@ -222,28 +225,33 @@ const projects = [
 	},
 	{
 		name: "Shellnerd",
-		desc: "My portfolio website built using ReactJs and hosted on GitHub pages",
+		desc: "Shellnerd is a CLI that can be used to manage GitHub user config, ssh key config and zsh config on a user's computer.",
 		githubUrl: "https://github.com/aki21j/shellnerd",
 	},
 	{
 		name: "COVID Vaccine Tracker",
-		desc: "My portfolio website built using ReactJs and hosted on GitHub pages",
+		desc: "A Telegram based bot that notifies the user if a vaccination slot is available at the user subscribed pincode.",
 		githubUrl: "https://github.com/aki21j/vaccine-tracker-bot"
 	},
 	{
 		name: "Desktop Wallpaper Refresher",
-		desc: "My portfolio website built using ReactJs and hosted on GitHub pages",
+		desc: "A Python application that can automatically updated your desktop background from either the available images, or from a list of subreddits.",
 		githubUrl: "https://github.com/aki21j/reddit-wallpaper-refresher"
 	}
 ]
+
+const contactText = `I am always open to collabarate on interesting projects. So, whether you have a question or just want to say hi, drop me a message and I'll get back to you!`
 
 module.exports = {
 	jumbotronOptions,
 	firstName,
 	lastName,
+	emailId,
+	cvLink,
 	aboutMeLine1,
 	aboutMeLine2,
 	aboutMeLine3,
 	technologies,
-	projects
+	projects,
+	contactText
 }

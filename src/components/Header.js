@@ -4,6 +4,8 @@ import Nav from "react-bootstrap/Nav"
 import Button from "react-bootstrap/Button"
 import '../index.css';
 
+import { cvLink } from "../shared-util/config"
+
 export default class NavComponent extends React.Component{
     
     render() {
@@ -43,7 +45,9 @@ export default class NavComponent extends React.Component{
                   </Nav.Link>
                   <Nav.Link
                     className={`px-3 nav-link lead white-link`}
-                    href={"/#contact"}
+                    href={cvLink} 
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Button
                       style={{width: 130}}

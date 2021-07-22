@@ -47,3 +47,7 @@ code {
   font-family: 'Major Mono Display', monospace;
   font-weight: bold;
 }
+
+button:focus{
+  box-shadow: none!important;
+}
