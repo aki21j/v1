@@ -196,6 +196,29 @@ const jumbotronOptions = {
   }
 
 
+const firstName = "Ankit"
+const lastName = "Gupta"
+
+const aboutMeLine1 = `Hello! My name is ${firstName} and I enjoy building things that usually reside on the internet.`
+const aboutMeLine2 = `I have been building stuff since 2017 and since then, I've had the privilege of working at multiple companies including startups.`
+const aboutMeLine3 = `Here are some technologies I've used:`
+const technologies = [
+	"Node.js",
+	"JavaScript",
+	"React",
+	"Vue",
+	"Python",
+	"Django",
+	"Electron",
+	"Docker"
+]
+
 module.exports = {
-	jumbotronOptions
+	jumbotronOptions,
+	firstName,
+	lastName,
+	aboutMeLine1,
+	aboutMeLine2,
+	aboutMeLine3,
+	technologies
 }
