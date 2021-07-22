@@ -63,7 +63,7 @@ const technologies = [
 const projects = [
 	{
 		name: "Personal Website",
-		desc: "My portfolio website built using ReactJs and hosted on GitHub pages",
+		desc: "My portfolio website built using ReactJs and hosted on GitHub pages using GitHub Workflows",
 		githubUrl: "https://github.com/aki21j/v1",
 		webUrl: "https://aki21j.github.io/v1"
 	},
