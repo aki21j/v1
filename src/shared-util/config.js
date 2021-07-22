@@ -195,6 +195,7 @@ const jumbotronOptions = {
 	},
   }
 
+
 module.exports = {
 	jumbotronOptions
 }

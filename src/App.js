@@ -18,8 +18,7 @@ function App() {
         <p className="mb-1">Hi, I am</p>
         <h1>Ankit Gupta</h1>
         <p className="py-3">
-           I am a Software Engineer, an Aspiring Artist 
-           <br/>and ocassionally a Noob Gamer   
+           Software Engineer | Aspiring Artist | Noob Gamer   
         </p>
         <Button 
           style={{width: 130}}
