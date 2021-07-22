@@ -1,6 +1,8 @@
 import './App.css';
 import NavComponent from './components/Header';
 import Particles from 'react-particles-js';
+import { TheTimeline } from "./components/TheTimeline"
+
 import Jumbotron from "react-bootstrap/Jumbotron"
 import Container from 'react-bootstrap/Container'
 import Button from "react-bootstrap/Button"
@@ -15,6 +17,7 @@ function App() {
         {/* top jumbo */}
         <Jumbotron fluid
             className="jumbotron-main w-100"
+            id="home"
           >
           <Container>
             <p className="mb-1">Hi, I am</p>
@@ -64,9 +67,21 @@ function App() {
               </div>
           </Container>
         </Jumbotron>  
-        
+
+        <div
+          className="jumbotron-other text-left"
+          id="timeline"
+        >
+          <div className="section-header-container">
+            <h1 className="section-header">Experience</h1>
+          </div>
+          <br/>
+          <TheTimeline/>
+        </div>
+
       </div>
       
+
       {/* background particles */}
       <Particles
         className="changing-gradient"

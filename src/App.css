@@ -111,17 +111,29 @@
   columns: 2 auto;
 }
 
-li {
+.multi-col-ul > li {
   list-style-type: none;
   position: relative;
   padding-left: 15px;
 }
 
-li:before {
+.multi-col-ul > li:before {
   content: "\26DB";
   font-size: 10px;
   position: absolute;
   top: 5px;
   left: -10px;
   color: #00ffff;
+}
+
+.cIKpxU {
+  width: auto!important;
+}
+
+.cbdngS::after, .sc-dlfnbm:last-of-type .cbdngS:last-of-type::after{
+  top: 12px!important;
+  height: 98%!important;
+}
+.VjmLI::after{
+  top: 10px!important;
 }
