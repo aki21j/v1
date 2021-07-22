@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nav-container{
+  padding-left: 40px!important;
+  padding-right: 40px!important;
+  color: #fff;
+  text-decoration: none;
+  position: fixed!important;
+  transition: background-color 0.5s linear;
+  z-index: 99;
+}
+
+.nav-transparent{
+  background-color: transparent;
+}
+
+.nav-white {
+  background-color: #fff;
+  color: #000;
+}
+
+.nav-link {
+  letter-spacing: 2px;
+}
+
+.white-link {
+  color: #fff!important;
+}
+
+.dark-link {
+  color: #000!important;
+}
+
+.nav-brand{
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bold;
+}
