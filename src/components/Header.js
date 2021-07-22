@@ -25,9 +25,7 @@ export default class NavComponent extends React.Component{
                   </Nav.Link>
                   <Nav.Link
                     className={`px-3 nav-link lead white-link`}
-                    href={"#"}
-                    target="_blank"
-                    rel="noreferrer noopener"
+                    href={"/#timeline"}
                   >
                     Experience
                   </Nav.Link>

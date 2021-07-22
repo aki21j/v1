@@ -2,6 +2,7 @@ import './App.css';
 import NavComponent from './components/Header';
 import Particles from 'react-particles-js';
 import { TheTimeline } from "./components/TheTimeline"
+import ProjectCard from './components/ProjectCard';
 
 import Jumbotron from "react-bootstrap/Jumbotron"
 import Container from 'react-bootstrap/Container'
@@ -10,6 +11,7 @@ import Button from "react-bootstrap/Button"
 import * as Config from "./shared-util/config"
 
 function App() {
+  const dumm = Config.projects[0]
   return (
     <div className="App">
       <NavComponent/>
@@ -56,7 +58,7 @@ function App() {
               <p className="section-desc">
                 {Config.aboutMeLine2}
               </p>
-              <p className="section-desc">
+              <p className="section-desc pb-3">
                 {Config.aboutMeLine3}
               </p>
               <ul className="multi-col-ul section-desc">
@@ -68,6 +70,7 @@ function App() {
           </Container>
         </Jumbotron>  
 
+        {/* experience timeline */}
         <div
           className="jumbotron-other text-left"
           id="timeline"
@@ -78,6 +81,43 @@ function App() {
           <br/>
           <TheTimeline/>
         </div>
+
+        {/* project section */}
+        <Jumbotron fluid
+            className="jumbotron-other w-100"
+            id="work"
+          >
+          <Container className="row justify-content-center">
+
+            <div className="col-md-12 mb-3">
+              <div className="section-header-container">
+                <h1 className="section-header text-center">Things I've Built</h1>
+              </div>
+              <br />
+            </div>
+
+            <div className="col-md-10 col-12">
+              <div className="row justify-content-center">
+                {
+                  Config.projects.map(el => {
+                    return(
+                      <div className="col-md-5 col-12 my-3">
+                        <ProjectCard
+                          name={el.name}
+                          desc={el.desc}
+                          githubUrl={el.githubUrl}
+                          webUrl={el.webUrl}
+                        />
+
+                      </div>
+                    )
+                  })
+                }
+              </div>
+            </div>
+          </Container>
+        </Jumbotron>  
+
 
       </div>
       

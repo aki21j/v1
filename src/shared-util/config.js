@@ -213,6 +213,30 @@ const technologies = [
 	"Docker"
 ]
 
+const projects = [
+	{
+		name: "Personal Website",
+		desc: "My portfolio website built using ReactJs and hosted on GitHub pages",
+		githubUrl: "https://github.com/aki21j/aki21j.github.io",
+		webUrl: "https://aki21j.github.io"
+	},
+	{
+		name: "Shellnerd",
+		desc: "My portfolio website built using ReactJs and hosted on GitHub pages",
+		githubUrl: "https://github.com/aki21j/shellnerd",
+	},
+	{
+		name: "COVID Vaccine Tracker",
+		desc: "My portfolio website built using ReactJs and hosted on GitHub pages",
+		githubUrl: "https://github.com/aki21j/vaccine-tracker-bot"
+	},
+	{
+		name: "Desktop Wallpaper Refresher",
+		desc: "My portfolio website built using ReactJs and hosted on GitHub pages",
+		githubUrl: "https://github.com/aki21j/reddit-wallpaper-refresher"
+	}
+]
+
 module.exports = {
 	jumbotronOptions,
 	firstName,
@@ -220,5 +244,6 @@ module.exports = {
 	aboutMeLine1,
 	aboutMeLine2,
 	aboutMeLine3,
-	technologies
+	technologies,
+	projects
 }
