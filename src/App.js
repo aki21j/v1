@@ -36,7 +36,7 @@ function App() {
               Software Engineer | Aspiring Artist | Ocassional Gamer   
             </p>
 
-              <a href="/#contact" className="top-cta">
+              <a href="#contact" className="top-cta">
                 <Button 
                   style={{width: 130}}
                   variant="outline-light"

@@ -44,7 +44,7 @@ const firstName = "Ankit"
 const lastName = "Gupta"
 const emailId = "ankitgupta21j@gmail.com"
 
-const cvLink = "https://drive.google.com/file/d/1DXolWMRvEbiWIwYWkYqXO9b2KreFt2Yr/view?usp=sharing"
+const cvLink = "https://drive.google.com/file/d/1UsiLHStuZVOn3rS_6ILR6pHCYLKZ-aNf/view?usp=sharing"
 
 const aboutMeLine1 = `Hello! My name is ${firstName} and I enjoy building things that usually reside on the internet.`
 const aboutMeLine2 = `I have been building stuff since 2017 and since then, I've had the privilege of working at multiple companies including startups.`
