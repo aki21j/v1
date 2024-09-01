@@ -1,6 +1,6 @@
 import './App.css';
 import NavComponent from './components/Header';
-import Particles from 'react-particles-js';
+import Particles from 'react-tsparticles';
 import TheTimeline from "./components/TheTimeline"
 import ProjectCard from './components/ProjectCard';
 import Footer from './components/Footer';
@@ -19,7 +19,7 @@ function App() {
       {/* background particles */}
       <Particles
         className="changing-gradient"
-        params={Config.jumbotronOptions}
+        options={Config.jumbotronOptions}
       />
 
       <NavComponent/>
@@ -94,7 +94,9 @@ function App() {
             <h1 className="section-header"><span className="color-me">Experience</span> Timeline</h1>
           </div>
           <br/>
-          <TheTimeline/>
+          <div className='mx-auto'>
+            <TheTimeline/>
+          </div>
         </div>
         <br/>
         <br/>
