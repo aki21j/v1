@@ -147,8 +147,8 @@ function App() {
                 <h1 className="section-header text-center"><span className="color-me">Get</span> In Touch</h1>
               </div>
               <p className="pt-3 section-desc">
-              `I am always open to collabarate on interesting projects. So, whether you have a question or just want to say hi, drop me a message 
-                @<a href={`mailto:${Config.emailId}`} className="color-me email-link">{Config.emailId}</a>  and I'll get back to you!`
+                I am always open to collabarate on interesting projects. So, whether you have a question or just want to say hi, drop me a message 
+                @<a href={`mailto:${Config.emailId}`} className="color-me email-link">{Config.emailId}</a>  and I'll get back to you!
               </p>
               <br />
             </div>

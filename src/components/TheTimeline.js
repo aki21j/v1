@@ -21,6 +21,17 @@ import {
     return (
      <Timeline theme={customTheme} dateFormat='ll'>
       <Container>
+       <YearContent startDate='2021/10/18'/>
+       <BodyContent>
+        <Section title='Product Engineer III'>
+         <Description variant='subtitle' text='Intercom, Dublin, Ireland' />
+         <br/>
+         <br/>
+        </Section>
+   
+       </BodyContent>
+      </Container>
+      <Container>
        <YearContent startDate='2018/05/07' endDate="2021/05/06"/>
        <BodyContent>
         <Section title='Senior Software Engineer'>

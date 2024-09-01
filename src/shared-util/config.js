@@ -54,6 +54,7 @@ const technologies = [
 	"JavaScript",
 	"React",
 	"Vue",
+	"Ruby",
 	"Python",
 	"Django",
 	"Electron",
