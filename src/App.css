@@ -304,3 +304,7 @@
     text-align: center!important;
   }
 }
+
+#timeline article::after {
+  height: 120%;
+}
