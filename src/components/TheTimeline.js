@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Timeline, Events, Event } from 'vertical-timeline-component-react';
    

@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import NavComponent from './components/Header';
 import Particles from 'react-tsparticles';
