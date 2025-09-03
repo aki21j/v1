@@ -44,48 +44,48 @@ const firstName = "Ankit"
 const lastName = "Gupta"
 const emailId = "ankitgupta21j@gmail.com"
 
-const cvLink = "https://drive.google.com/file/d/14y30P99pc37VhwQt1CLEC9GwIRGcIFPQ/view?usp=drive_link"
+const cvLink = "https://drive.google.com/file/d/1Wu43ix4CIsJLMHo1kR5EvIUbcg1PupSR/view?usp=sharing"
 
-const aboutMeLine1 = `// Developer by day, digital architect by passion. I craft experiences that live where code meets creativity.`
-const aboutMeLine2 = `Started my journey in 2017, turning coffee into code and ideas into scalable solutions. From startups to scale-ups, I've helped build the future one commit at a time.`
-const aboutMeLine3 = `// Current tech stack and favorite tools:`
+const aboutMeLine1 = `Hello! I'm Ankit, a software engineer who enjoys building things that usually live somewhere on the internet.`
+const aboutMeLine2 = `I've been crafting digital experiences since 2017, working everywhere from scrappy startups to global companies. When I'm not debugging production issues at 2 AM, you'll find me exploring new frameworks or planning my next travel adventure.`
+const aboutMeLine3 = `Here are the technologies I've been working with lately:`
 const technologies = [
-	"Node.js",
-	"JavaScript",
+	"JavaScript/TypeScript",
 	"React",
-	"Vue",
-	"Ruby",
+	"Ruby on Rails", 
 	"Python",
-	"Django",
-	"Electron",
-	"Docker"
+	"Node.js",
+	"SQL",
+	"AWS",
+	"MongoDB"
 ]
 
 const projects = [
 	{
-		name: "Portfolio Terminal",
-		desc: "// A retro-future portfolio with terminal aesthetics, typing animations, and glassmorphism. Built with React hooks and modern CSS.",
-		githubUrl: "https://github.com/aki21j/v1",
-		webUrl: "https://aki21j.github.io/v1",
-		tech: ["React", "CSS3", "JavaScript"]
+		name: "Aruko.World",
+		desc: "// Collaborative group travel planning platform addressing real user pain points around trip coordination, payment tracking, and itinerary management.",
+		githubUrl: "https://github.com/aki21j/aruko-world",
+		webUrl: "https://aruko.world",
+		tech: ["React", "Node.js", "MongoDB", "Payment APIs"]
+	},
+	{
+		name: "COVID Vaccine Tracker",
+		desc: "// Telegram bot that notified users about available COVID vaccine slots by pincode. Helped thousands secure appointments during the pandemic.",
+		githubUrl: "https://github.com/aki21j/vaccine-tracker-bot",
+		tech: ["Python", "Telegram API", "AWS EC2", "Cron Jobs"]
 	},
 	{
 		name: "Shellnerd CLI",
-		desc: "// Command-line productivity tool for developers. Streamlines GitHub config, SSH keys, and shell setup with a single command.",
+		desc: "// Command-line tool to manage oh-my-zsh, SSH, and Git configurations. Supports Ubuntu and macOS for seamless dev environment setup.",
 		githubUrl: "https://github.com/aki21j/shellnerd",
-		tech: ["Node.js", "CLI", "Git"]
+		tech: ["Node.js", "CLI", "Shell Scripting", "Git"]
 	},
 	{
-		name: "Vaccine Tracker Bot",
-		desc: "// Real-time Telegram bot that solved India's vaccination slot shortage. Helped 1000+ users secure appointments during COVID-19.",
-		githubUrl: "https://github.com/aki21j/vaccine-tracker-bot",
-		tech: ["Python", "Telegram API", "Cron"]
-	},
-	{
-		name: "Desktop Aesthetic Bot",
-		desc: "// Python automation that curates your desktop wallpaper from Reddit's finest subreddits. Because even your desktop deserves good design.",
-		githubUrl: "https://github.com/aki21j/reddit-wallpaper-refresher",
-		tech: ["Python", "Reddit API", "Automation"]
+		name: "Portfolio Terminal",
+		desc: "// This very portfolio! A retro-future terminal experience with typing animations, glassmorphism, and 3D interactive cards.",
+		githubUrl: "https://github.com/aki21j/v1",
+		webUrl: "https://aki21j.github.io/v1",
+		tech: ["React", "CSS3", "JavaScript"]
 	}
 ]
 

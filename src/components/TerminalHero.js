@@ -15,13 +15,13 @@ const TerminalHero = () => {
       delay: 80 
     },
     { 
-      command: 'cat role.txt', 
-      output: 'Product Engineer III @ Intercom',
+      command: 'cat about.txt', 
+      output: 'Full-stack engineer who turns coffee into code ☕',
       delay: 60 
     },
     { 
       command: 'ls skills/', 
-      output: 'innovation/  problem-solving/  user-experience/',
+      output: 'problem-solving/  systems-thinking/  shipping-products/',
       delay: 40 
     },
     { 
@@ -101,7 +101,7 @@ const TerminalHero = () => {
         {/* Traditional Hero Content - Appears after terminal animation */}
         <div className={`hero-content ${showContent ? 'fade-in' : 'hidden'}`}>
           <div className="hero-subtitle">
-            Software Engineer | Aspiring Artist | Occasional Gamer
+            Software Engineer | Problem Solver | Occasional Gamer
           </div>
           
           <div className="hero-cta">

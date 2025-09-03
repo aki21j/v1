@@ -26,7 +26,7 @@ const NavComponent = () => {
               <Navbar.Brand className="brand" href={"#home"}>
                 <span className={`nav-brand white-link terminal-logo`}>
                   <span className="terminal-bracket">[</span>
-                  <span className="logo-letter">A</span>
+                  <span className="logo-triangle">Δ</span>
                   <span className="terminal-bracket">]</span>
                 </span>
               </Navbar.Brand>
