@@ -3,7 +3,6 @@ import './App.css';
 import NavComponent from './components/Header';
 import Particles from 'react-tsparticles';
 import TheTimeline from "./components/TheTimeline"
-import ProjectCard from './components/ProjectCard';
 import Footer from './components/Footer';
 import TerminalHero from './components/TerminalHero';
 import ScrollFadeIn from './components/ScrollFadeIn';
