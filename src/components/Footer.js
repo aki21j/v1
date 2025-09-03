@@ -6,29 +6,32 @@ import { linkedinUrl, githubUrl, instagramUrl, stackoverflowUrl } from "../share
 const Footer = () => {
     return (
         <div className="nav-transparent white-link px-5 footer-container">
-            <div className="col-12 mb-3 text-center">
+            {/* Social Links */}
+            <div className="col-12 mb-4 text-center">
                 <a href={linkedinUrl} target="_blank" rel="noreferrer">
-                    <FaLinkedin
-                        className="social-links"
-                    />
+                    <FaLinkedin className="social-links" />
                 </a>
                 <a href={githubUrl} target="_blank" rel="noreferrer">
-                    <FaGithub
-                        className="social-links"
-                    />
+                    <FaGithub className="social-links" />
                 </a>
                 <a href={stackoverflowUrl} target="_blank" rel="noreferrer">
-                    <FaStackOverflow
-                        className="social-links"
-                    />
+                    <FaStackOverflow className="social-links" />
                 </a>
                 <a href={instagramUrl} target="_blank" rel="noreferrer">
-                    <FaInstagram
-                        className="social-links"
-                    />
+                    <FaInstagram className="social-links" />
                 </a>
             </div>
-            <p>Designed and Built by  <span className="nav-brand color-me" style={{letterSpacing:2}}>{`<Ankit> `} </span></p>
+            
+            {/* Terminal-style credits */}
+            <div className="text-center footer-credits">
+                <p className="terminal-text mb-1">
+                    <span className="terminal-prompt">$ </span>
+                    <code>git log --author="Ankit" --oneline</code>
+                </p>
+                <p className="footer-signature">
+                    Designed and Built by <span className="nav-brand color-me" style={{letterSpacing:2}}>{`<Ankit>`}</span>
+                </p>
+            </div>
         </div>
     )
 }

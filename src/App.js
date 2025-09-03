@@ -5,6 +5,7 @@ import Particles from 'react-tsparticles';
 import TheTimeline from "./components/TheTimeline"
 import ProjectCard from './components/ProjectCard';
 import Footer from './components/Footer';
+import TerminalHero from './components/TerminalHero';
 
 import Jumbotron from "react-bootstrap/Jumbotron"
 import Container from 'react-bootstrap/Container'
@@ -25,27 +26,12 @@ function App() {
 
       <NavComponent/>
       <div className="top-level-container container-fluid">
-        {/* top jumbo */}
+        {/* Terminal Hero Section */}
         <Jumbotron fluid
             className="jumbotron-main w-100"
             id="home"
           >
-          <Container>
-            <p className="mb-1 top-subheading">Hi, I am</p>
-            <h1><span className="color-me">{Config.firstName}</span> {Config.lastName}</h1>
-            <p className="py-3 mb-3 top-subheading">
-              Software Engineer | Aspiring Artist | Ocassional Gamer   
-            </p>
-
-              <a href="#contact" className="top-cta">
-                <Button 
-                  style={{width: 130}}
-                  variant="outline-light"
-                >
-                  Get in touch
-                </Button>
-              </a>
-          </Container>
+          <TerminalHero />
         </Jumbotron>
 
         {/* aboutme jumbo */}
@@ -127,6 +113,7 @@ function App() {
                           desc={el.desc}
                           githubUrl={el.githubUrl}
                           webUrl={el.webUrl}
+                          tech={el.tech}
                         />
 
                       </div>
@@ -149,9 +136,12 @@ function App() {
               <div className="section-header-container">
                 <h1 className="section-header text-center"><span className="color-me">Get</span> In Touch</h1>
               </div>
-              <p className="pt-3 section-desc">
-                I am always open to collabarate on interesting projects. So, whether you have a question or just want to say hi, drop me a message 
-                @<a href={`mailto:${Config.emailId}`} className="color-me email-link">{Config.emailId}</a>  and I'll get back to you!
+              <p className="pt-3 section-desc terminal-text">
+                {Config.contactText}
+              </p>
+              <p className="section-desc">
+                <span className="terminal-prompt">$ </span>
+                <code>email --to=</code><a href={`mailto:${Config.emailId}`} className="color-me email-link">{Config.emailId}</a>
               </p>
               <br />
             </div>
@@ -159,11 +149,11 @@ function App() {
             <div className="col-md-7 col-10 mb-3 text-center">
               <a href={`mailto:${Config.emailId}`}>
                 <Button 
-                  style={{width: 130}}
+                  style={{width: 150}}
                   variant="outline-light"
-                  
+                  className="terminal-button"
                 >
-                  Say Hello
+                  ./send_message
                 </Button>
               </a>
               

@@ -46,9 +46,9 @@ const emailId = "ankitgupta21j@gmail.com"
 
 const cvLink = "https://drive.google.com/file/d/14y30P99pc37VhwQt1CLEC9GwIRGcIFPQ/view?usp=drive_link"
 
-const aboutMeLine1 = `Hello! My name is ${firstName} and I enjoy building things that usually reside on the internet.`
-const aboutMeLine2 = `I have been building stuff since 2017 and since then, I've had the privilege of working at multiple companies including startups.`
-const aboutMeLine3 = `Here are some technologies I've used:`
+const aboutMeLine1 = `// Developer by day, digital architect by passion. I craft experiences that live where code meets creativity.`
+const aboutMeLine2 = `Started my journey in 2017, turning coffee into code and ideas into scalable solutions. From startups to scale-ups, I've helped build the future one commit at a time.`
+const aboutMeLine3 = `// Current tech stack and favorite tools:`
 const technologies = [
 	"Node.js",
 	"JavaScript",
@@ -63,29 +63,33 @@ const technologies = [
 
 const projects = [
 	{
-		name: "Personal Website",
-		desc: "My portfolio website built using ReactJs and hosted on GitHub pages using GitHub Workflows",
+		name: "Portfolio Terminal",
+		desc: "// A retro-future portfolio with terminal aesthetics, typing animations, and glassmorphism. Built with React hooks and modern CSS.",
 		githubUrl: "https://github.com/aki21j/v1",
-		webUrl: "https://aki21j.github.io/v1"
+		webUrl: "https://aki21j.github.io/v1",
+		tech: ["React", "CSS3", "JavaScript"]
 	},
 	{
-		name: "Shellnerd",
-		desc: "Shellnerd is a CLI that can be used to manage GitHub user config, ssh key config and zsh config on a user's computer.",
+		name: "Shellnerd CLI",
+		desc: "// Command-line productivity tool for developers. Streamlines GitHub config, SSH keys, and shell setup with a single command.",
 		githubUrl: "https://github.com/aki21j/shellnerd",
+		tech: ["Node.js", "CLI", "Git"]
 	},
 	{
-		name: "COVID Vaccine Tracker",
-		desc: "A Telegram based bot that notifies the user if a vaccination slot is available at the user subscribed pincode.",
-		githubUrl: "https://github.com/aki21j/vaccine-tracker-bot"
+		name: "Vaccine Tracker Bot",
+		desc: "// Real-time Telegram bot that solved India's vaccination slot shortage. Helped 1000+ users secure appointments during COVID-19.",
+		githubUrl: "https://github.com/aki21j/vaccine-tracker-bot",
+		tech: ["Python", "Telegram API", "Cron"]
 	},
 	{
-		name: "Desktop Wallpaper Refresher",
-		desc: "A Python application that can automatically updated your desktop background from either the available images, or from a list of subreddits.",
-		githubUrl: "https://github.com/aki21j/reddit-wallpaper-refresher"
+		name: "Desktop Aesthetic Bot",
+		desc: "// Python automation that curates your desktop wallpaper from Reddit's finest subreddits. Because even your desktop deserves good design.",
+		githubUrl: "https://github.com/aki21j/reddit-wallpaper-refresher",
+		tech: ["Python", "Reddit API", "Automation"]
 	}
 ]
 
-const contactText = `I am always open to collabarate on interesting projects. So, whether you have a question or just want to say hi, drop me a message @${emailId} and I'll get back to you!`
+const contactText = `// Always interested in new challenges and cool projects. Whether you want to build something amazing or just debug life over coffee, let's connect!`
 
 const linkedinUrl = "https://linkedin.com/in/ankit-gupta-21j"
 const githubUrl = "https://github.com/aki21j"
