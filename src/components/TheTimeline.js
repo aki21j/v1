@@ -1,67 +1,69 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { Timeline, Events, Event } from 'vertical-timeline-component-react';
+import ScrollFadeIn from './ScrollFadeIn';
    
    const TheTimeline = () => {
-    const customTheme = {
-     yearColor: 'rgb(230 243 254)',
-     lineColor: '#d0cdc4',
-     dotColor: '#262626',
-     borderDotColor: '#d0cdc4',
-     titleColor: '#fff',
-     subtitleColor: 'rgb(255 236 5 / 89%)',
-     textColor: 'rgb(143 143 143)',
-    };
+    const experiences = [
+        {
+            title: "Senior Product Engineer",
+            company: "Intercom",
+            location: "Dublin, Ireland",
+            startDate: "Apr 2024",
+            endDate: "Present",
+            isActive: true
+        },
+        {
+            title: "Product Engineer III", 
+            company: "Intercom",
+            location: "Dublin, Ireland",
+            startDate: "Oct 2021",
+            endDate: "Apr 2024",
+            isActive: false
+        },
+        {
+            title: "Senior Software Engineer",
+            company: "O4S",
+            location: "Gurgaon, India", 
+            startDate: "May 2018",
+            endDate: "May 2021",
+            isActive: false
+        },
+        {
+            title: "Frontend Developer",
+            company: "GlocalGurus",
+            location: "Bangalore, India",
+            startDate: "Aug 2017", 
+            endDate: "Jan 2018",
+            isActive: false
+        }
+    ];
    
     return (
         <Container>
-        <Timeline theme={customTheme} dateFormat="only-number" collapse withoutDay className="mx-auto">
-            <Events
-                title="Product Engineer III"
-                subtitle="Intercom, Dublin, Ireland"
-                startDate='2021/10/18'
-                active
-                defaultClosed
-                children={[
-                    <Event title="" description={[]}/>
-                ]}
-            >
-                
-            </Events>
-            <Events
-                title="Senior Software Engineer"
-                subtitle="O4S, Gurgaon, India"
-                startDate='2018/05/07' 
-                endDate="2021/05/06"
-                defaultClosed
-                children={[
-                    <Event title="" description={[]}/>
-                ]}
-            >
-            </Events>
-            <Events
-                title="Frontend Engineer I"
-                subtitle="O4S, Gurgaon, India"
-                startDate='2017/05/01' 
-                endDate="2018/04/30"
-                defaultClosed
-                children={[
-                    <Event title="" description={[]}/>
-                ]}
-            >
-            </Events>
-            <Events
-                title="Frontend Engineer"
-                subtitle="GlocalGurus, Bangalore, India"
-                startDate='2017/08/01' 
-                endDate="2018/01/31"
-                defaultClosed
-                children={[
-                    <Event title="" description={[]}/>
-                ]}
-            >
-            </Events>
-        </Timeline>
+            <div className="custom-timeline">
+                {experiences.map((exp, index) => (
+                    <ScrollFadeIn key={index} delay={index * 150} direction="up">
+                        <div className="timeline-item">
+                            <div className="timeline-marker">
+                                <div className={`timeline-dot ${exp.isActive ? 'active' : ''}`}></div>
+                                {index < experiences.length - 1 && <div className="timeline-line"></div>}
+                            </div>
+                            <div className="timeline-content">
+                                <div className="timeline-header">
+                                    <h3 className="timeline-title">{exp.title}</h3>
+                                    <span className="timeline-date">
+                                        {exp.startDate} - {exp.endDate}
+                                    </span>
+                                </div>
+                                <div className="timeline-company">
+                                    <span className="company-name">{exp.company}</span>
+                                    <span className="company-location">{exp.location}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </ScrollFadeIn>
+                ))}
+            </div>
         </Container>
     );
    };
