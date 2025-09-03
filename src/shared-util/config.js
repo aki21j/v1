@@ -94,7 +94,7 @@ const contactText = `// Always interested in new challenges and cool projects. W
 const linkedinUrl = "https://linkedin.com/in/ankit-gupta-21j"
 const githubUrl = "https://github.com/aki21j"
 const stackoverflowUrl = "https://stackoverflow.com/users/10293708/ankit-gupta"
-const instagramUrl = "https://www.instagram.com/I_ankit.gupta/"
+const instagramUrl = "https://www.instagram.com/everyday_grid/"
 
 module.exports = {
 	jumbotronOptions,
